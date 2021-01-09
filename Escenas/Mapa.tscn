@@ -1,69 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Escenas/Player.tscn" type="PackedScene" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 147.329, 10 )
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 147.329, 10 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 238.258, 10 )
-
-[node name="Mapa" type="Node2D"]
+[node name="MapaPruebas" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -84.4591, -29.7861 )
+position = Vector2( 100, 50 )
 
-[node name="Piso" type="StaticBody2D" parent="."]
-position = Vector2( 202.433, 403.815 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="Plataforma" type="CollisionShape2D" parent="Piso"]
-position = Vector2( 32, 28 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 100, 200 )
+scale = Vector2( 20, 2 )
 shape = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Piso2" type="StaticBody2D" parent="."]
-position = Vector2( 841.658, 416.543 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Plataforma" type="CollisionShape2D" parent="Piso2"]
-position = Vector2( 32, 28 )
-shape = SubResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Piso3" type="StaticBody2D" parent="."]
-position = Vector2( 498.004, 521.195 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Plataforma" type="CollisionShape2D" parent="Piso3"]
-position = Vector2( 32, 28 )
-shape = SubResource( 3 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Piso4" type="StaticBody2D" parent="."]
-position = Vector2( 1304.35, 503.556 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Plataforma" type="CollisionShape2D" parent="Piso4"]
-position = Vector2( 32, 28 )
-shape = SubResource( 3 )
-__meta__ = {
-"_edit_group_": true
-}
