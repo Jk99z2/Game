@@ -16,7 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="The Earth Breeder"
+run/main_scene="res://Escenas/Introduccion.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+gamehandler="*res://Escenas/gamehandler.gd"
 
 [display]
 
