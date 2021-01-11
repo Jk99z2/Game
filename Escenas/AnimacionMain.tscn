@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Player/Sprites_Player.png" type="Texture" id=1]
+[ext_resource path="res://Escenas/AnimacionMain.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6 ]
+}
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 54.7283, 56.7306 )
+scale = Vector2( 15, 15 )
+texture = ExtResource( 1 )
+vframes = 4
+hframes = 10
+frame = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 3.0
+anims/Idle = SubResource( 1 )
