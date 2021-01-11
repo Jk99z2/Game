@@ -14,7 +14,7 @@ motion_mirroring = Vector2( 1279, 0 )
 
 [node name="Sprite" type="Sprite" parent="Cielo"]
 position = Vector2( 787.078, 385.997 )
-scale = Vector2( 0.999934, 1.05871 )
+scale = Vector2( 3, 1.059 )
 texture = ExtResource( 3 )
 
 [node name="Nubes" type="ParallaxLayer" parent="."]
@@ -22,7 +22,8 @@ motion_scale = Vector2( 0.3, 0 )
 motion_mirroring = Vector2( 1279, 0 )
 
 [node name="Sprite" type="Sprite" parent="Nubes"]
-position = Vector2( 795.807, 341.72 )
+position = Vector2( 690.093, 373.09 )
+scale = Vector2( 1.16518, 1.08714 )
 texture = ExtResource( 2 )
 
 [node name="Montañas" type="ParallaxLayer" parent="."]
@@ -30,5 +31,6 @@ motion_scale = Vector2( 0.6, 0 )
 motion_mirroring = Vector2( 1279, 0 )
 
 [node name="Sprite" type="Sprite" parent="Montañas"]
-position = Vector2( 731.781, 404.459 )
+position = Vector2( 685.891, 404.459 )
+scale = Vector2( 1.0717, 1 )
 texture = ExtResource( 4 )
