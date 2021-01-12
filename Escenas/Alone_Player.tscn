@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Escenas/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/Sprites_Player.png" type="Texture" id=2]
+[ext_resource path="res://Soundtracks/SFX/JumpFX.ogg" type="AudioStream" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Hurt"
@@ -94,3 +95,6 @@ anims/Walk = SubResource( 4 )
 position = Vector2( 4.20449, 91.741 )
 scale = Vector2( 5, 4.5 )
 shape = SubResource( 5 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
