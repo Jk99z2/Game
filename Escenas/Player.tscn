@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Escenas/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/Sprites_Player.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Escenario/Nubes_parallax.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Escenario/GreenMountains-export.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Escenario/Sky.png" type="Texture" id=5]
+[ext_resource path="res://Soundtracks/SFX/JumpFX.ogg" type="AudioStream" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Hurt"
@@ -133,3 +134,7 @@ motion_mirroring = Vector2( 1280, 0 )
 position = Vector2( 648.009, 70.899 )
 scale = Vector2( 1.0059, 1.25898 )
 texture = ExtResource( 4 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -1.0
