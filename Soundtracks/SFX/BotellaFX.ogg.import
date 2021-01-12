@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BotellaFX.ogg-eb01087bbac7c4db5a0178091bb736e0.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/SFX/BotellaFX.ogg"
+dest_files=[ "res://.import/BotellaFX.ogg-eb01087bbac7c4db5a0178091bb736e0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
