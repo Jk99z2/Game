@@ -1,6 +1,8 @@
 extends VideoPlayer
 
-# warning-ignore:unused_argument
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_accept"):
 # warning-ignore:return_value_discarded
