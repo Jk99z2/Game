@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Escenas/Nivel1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Nivel1Eng.gd" type="Script" id=2]
+[ext_resource path="res://Fuentes/Font/TheEarthBreeder font.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Sprites/Objetos/CHOZAENG.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Node2D" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Reanudar" parent="." index="4"]
+custom_fonts/font = SubResource( 1 )
+text = "RESUME"
+
+[node name="tiempo" parent="CanvasLayer" index="1"]
+margin_left = 62.0819
+margin_top = 37.0273
+margin_right = 432.082
+margin_bottom = 127.027
+
+[node name="Area2D11" parent="." index="34" instance=ExtResource( 4 )]
+position = Vector2( 5639.85, -511.969 )
+
+[node name="Area2D10" parent="." index="40"]
+visible = false
+position = Vector2( 6052.97, -512.519 )
+[connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_Area2D11_body_entered"]
