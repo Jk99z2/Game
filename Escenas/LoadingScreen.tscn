@@ -16,4 +16,7 @@ anchor_bottom = 1.0
 stream = ExtResource( 1 )
 autoplay = true
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="finished" from="Loading" to="Loading" method="_on_Loading_finished"]
